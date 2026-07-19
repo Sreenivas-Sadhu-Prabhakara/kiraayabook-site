@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KiraayaBook — Rent that collects itself</title>
+  <meta name="description" content="Turn your monthly rent chase into an automatic dues, reminder and receipt cycle. Built for Indian landlords and PG owners. Rs 499/mo." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="KiraayaBook home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" role="img" aria-label="KiraayaBook logo">
+            <rect x="3" y="4" width="26" height="24" rx="3" fill="#0F766E"/>
+            <rect x="3" y="4" width="7" height="24" rx="3" fill="#0a5952"/>
+            <path d="M14 10h11M14 16h11M14 22h7" stroke="#F6F4EF" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">Kiraaya<span class="brand__book">Book</span></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#problem">The problem</a>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#preview">Preview</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a href="#pricing" class="btn btn--sm">Start free</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Rent collection, on autopilot</p>
+          <h1 class="hero__title">Rent that<br /><span class="accent-word">collects itself.</span></h1>
+          <p class="hero__pain">
+            Every month you re-open WhatsApp, scroll for who paid, retype the same
+            reminder, and hunt through a diary for arrears. KiraayaBook runs that
+            whole cycle for you — dues, reminders, receipts — on the day rent is due.
+          </p>
+          <div class="hero__cta">
+            <a href="#pricing" class="btn btn--lg">Collect this month's rent &rarr;</a>
+            <a href="#how" class="btn-link">See how it works</a>
+          </div>
+          <p class="hero__note"><span class="dot"></span>For landlords &amp; PG owners with a handful of units · Rs&nbsp;499/mo</p>
+        </div>
+
+        <!-- SIGNATURE WIDGET: live rent register -->
+        <aside class="register" aria-label="Live rent register demo">
+          <div class="register__head">
+            <div>
+              <p class="register__label">Rent register</p>
+              <p class="register__month" id="reg-month">July 2026</p>
+            </div>
+            <span class="register__pill">Auto-run</span>
+          </div>
+          <ul class="register__rows" id="reg-rows">
+            <li class="reg-row" data-state="paid">
+              <span class="reg-row__name">Ramesh Iyer <em>· 2BHK · Koramangala</em></span>
+              <span class="reg-row__amt">Rs 18,000</span>
+              <span class="reg-row__tag tag--paid">Paid</span>
+            </li>
+            <li class="reg-row" data-state="due">
+              <span class="reg-row__name">Priya Nair <em>· 1BHK · Andheri&nbsp;E</em></span>
+              <span class="reg-row__amt">Rs 22,500</span>
+              <span class="reg-row__tag tag--due" id="reg-live-tag">Reminder sent</span>
+            </li>
+            <li class="reg-row" data-state="overdue">
+              <span class="reg-row__name">Farhan Qureshi <em>· PG bed · Kondapur</em></span>
+              <span class="reg-row__amt">Rs 9,500</span>
+              <span class="reg-row__tag tag--over">3 days overdue</span>
+            </li>
+          </ul>
+          <div class="register__foot">
+            <div class="regstat">
+              <span class="regstat__label">Collected</span>
+              <span class="regstat__val regstat__val--in" id="reg-collected">Rs 40,500</span>
+            </div>
+            <div class="regstat">
+              <span class="regstat__label">Pending</span>
+              <span class="regstat__val regstat__val--out" id="reg-pending">Rs 9,500</span>
+            </div>
+          </div>
+          <p class="register__caption" id="reg-caption">Priya taps the payment link &rarr; receipt goes out automatically.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM ============ -->
+    <section class="section" id="problem">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">01 · The problem</p>
+        <div class="two-col">
+          <h2 class="section__title">You own the flats.<br />The chasing owns your month.</h2>
+          <div class="prose">
+            <p>
+              If you run four flats in Pune or twelve PG beds in Kondapur, nobody handed you
+              an accounts department. Your system is a <strong>WhatsApp thread, a physical diary,
+              and your own memory</strong> — and all three quietly break down.
+            </p>
+          </div>
+        </div>
+
+        <div class="pain-grid">
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">💬</span>
+            <h3>WhatsApp forgets, so you don't get to</h3>
+            <p>Reminders get typed one by one, some tenants get chased twice, some slip through. By the 10th you're scrolling to reconstruct who actually paid.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">📓</span>
+            <h3>The diary is one spill away from gone</h3>
+            <p>Arrears live in a ledger only you can read. Carrying a Rs 9,500 balance forward for two months is a note in the margin — until it isn't.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">🔌</span>
+            <h3>The electricity split is a monthly argument</h3>
+            <p>New meter reading, old reading, per-unit rate, who used what. It's ten minutes of maths and a screenshot, every single tenant.</p>
+          </div>
+          <div class="pain">
+            <span class="pain__i" aria-hidden="true">🧾</span>
+            <h3>"Bhaiya, receipt bhej dena"</h3>
+            <p>Paid tenants want proof. You're photographing a signed slip or promising a receipt you'll send later — and later never quite comes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSIGHT ============ -->
+    <section class="insight" id="insight">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--light">02 · The insight</p>
+        <blockquote class="insight__quote">
+          Rent is the most <span class="hl">predictable</span> recurring payment
+          there is — same tenants, same amount, same day — yet it's the one still
+          chased <span class="hl">by hand</span>, every month, on WhatsApp.
+        </blockquote>
+        <p class="insight__punch">
+          KiraayaBook's whole job is to close that gap: take a thing that repeats
+          perfectly and let it run as a cycle — <strong>generate the dues, send the
+          reminders, issue the receipt</strong> — so collection happens whether or
+          not you remembered to start it.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">03 · How it works</p>
+        <h2 class="section__title">Set it up once. Then every month runs itself.</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n">1</span>
+            <div>
+              <h3>Add your units and leases</h3>
+              <p>Enter each flat or PG bed, the tenant, the rent, and the due day. That's the whole setup — takes an evening for a full building.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">2</span>
+            <div>
+              <h3>On the due day, invoices generate</h3>
+              <p>KiraayaBook creates one invoice per active lease and rolls any carried-forward arrears into each tenant's balance. No button to press.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">3</span>
+            <div>
+              <h3>Staged reminders go out on WhatsApp</h3>
+              <p>A nudge 3 days before, a note on the due day, a firmer one if it goes overdue — each drafted to your tenant, ready in the outbox.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__n">4</span>
+            <div>
+              <h3>Paid marks itself, receipt goes back</h3>
+              <p>When a tenant pays, the due clears and a digital receipt is issued automatically. Your dashboard always shows collected vs pending.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="section section--tint" id="features">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">04 · What's inside</p>
+        <h2 class="section__title">The month's whole rent engine, in one book.</h2>
+
+        <div class="feat-grid">
+          <article class="feat">
+            <h3>Monthly rent cycle</h3>
+            <p>One invoice per active lease, raised automatically on its due day. Set the day once; it repeats forever.</p>
+          </article>
+          <article class="feat">
+            <h3>Dues &amp; arrears roll-up</h3>
+            <p>Every tenant carries a running balance — this month plus anything unpaid before it. No margin notes to reconcile.</p>
+          </article>
+          <article class="feat">
+            <h3>Staged WhatsApp reminders</h3>
+            <p>T-3 days, due day, and overdue nudges written to your outbox — polite, personal, and never sent twice.</p>
+          </article>
+          <article class="feat">
+            <h3>Instant digital receipts</h3>
+            <p>The moment a payment lands, the tenant gets a clean receipt with the flat, month and amount. Proof, handled.</p>
+          </article>
+          <article class="feat">
+            <h3>Electricity split by meter</h3>
+            <p>Punch in the new reading; KiraayaBook computes each tenant's units and adds the charge to their invoice. No manual maths.</p>
+          </article>
+          <article class="feat">
+            <h3>Vacancy flag on empty units</h3>
+            <p>An empty flat is marked vacant, drops out of the billing run, and shows as lost income you can see at a glance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT PREVIEW ============ -->
+    <section class="section" id="preview">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">05 · The dashboard</p>
+        <h2 class="section__title">Open it on the 1st. See the whole building in ten seconds.</h2>
+
+        <div class="screen" role="img" aria-label="KiraayaBook dashboard preview showing collected 62,000 rupees and pending 41,000 rupees for July 2026, with an arrears list of four tenants.">
+          <!-- browser chrome -->
+          <div class="screen__bar">
+            <span class="screen__dot"></span><span class="screen__dot"></span><span class="screen__dot"></span>
+            <span class="screen__url">app.kiraayabook.in / Sunrise Residency</span>
+          </div>
+
+          <div class="screen__body">
+            <div class="screen__topline">
+              <div>
+                <p class="screen__hello">Namaste, Anil ji</p>
+                <p class="screen__sub">Sunrise Residency · 9 units · July 2026</p>
+              </div>
+              <span class="screen__tag">Cycle run &middot; 01 Jul</span>
+            </div>
+
+            <!-- KPI cards -->
+            <div class="kpis">
+              <div class="kpi kpi--in">
+                <p class="kpi__label">Collected this month</p>
+                <p class="kpi__val">Rs 62,000</p>
+                <div class="kpi__bar"><span style="width:60%"></span></div>
+                <p class="kpi__meta">6 of 9 tenants paid</p>
+              </div>
+              <div class="kpi kpi--out">
+                <p class="kpi__label">Pending</p>
+                <p class="kpi__val">Rs 41,000</p>
+                <div class="kpi__bar kpi__bar--out"><span style="width:40%"></span></div>
+                <p class="kpi__meta">3 tenants · 1 overdue</p>
+              </div>
+              <div class="kpi kpi--flat">
+                <p class="kpi__label">Vacant units</p>
+                <p class="kpi__val">1</p>
+                <p class="kpi__meta">Flat 3B · lost Rs 16,000/mo</p>
+              </div>
+            </div>
+
+            <!-- arrears table -->
+            <div class="tablecard">
+              <div class="tablecard__head">
+                <p>Arrears &amp; dues</p>
+                <span class="tablecard__hint">reminders auto-staged</span>
+              </div>
+              <div class="tablescroll">
+                <table class="dtable">
+                  <thead>
+                    <tr>
+                      <th>Tenant</th><th>Unit</th><th class="num">Rent</th><th class="num">Balance</th><th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sunita Deshmukh</td><td>Flat 1A</td>
+                      <td class="num">18,000</td><td class="num">0</td>
+                      <td><span class="s s--paid">Paid · receipt sent</span></td>
+                    </tr>
+                    <tr>
+                      <td>Vikram Reddy</td><td>Flat 2C</td>
+                      <td class="num">16,000</td><td class="num">16,000</td>
+                      <td><span class="s s--due">Reminder T-0</span></td>
+                    </tr>
+                    <tr>
+                      <td>Aisha Khan</td><td>Flat 4A</td>
+                      <td class="num">15,000</td><td class="num">15,000</td>
+                      <td><span class="s s--due">Reminder T-3</span></td>
+                    </tr>
+                    <tr>
+                      <td>Joseph D'Souza</td><td>PG bed 7</td>
+                      <td class="num">7,500</td><td class="num">10,000</td>
+                      <td><span class="s s--over">4 days overdue</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="section section--tint" id="pricing">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">06 · Pricing</p>
+        <div class="price-wrap">
+          <div class="price-copy">
+            <h2 class="section__title">One flat price. However many doors you own.</h2>
+            <p class="prose">
+              If KiraayaBook recovers <strong>one late payment a month</strong> that
+              would otherwise have slipped, it's already paid for itself many times
+              over — and you've bought back the hours you spend chasing.
+            </p>
+            <ul class="price-includes">
+              <li>Unlimited units &amp; leases</li>
+              <li>Auto rent cycle + staged WhatsApp reminders</li>
+              <li>Digital receipts + electricity split</li>
+              <li>Collected-vs-pending dashboard &amp; arrears list</li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <p class="price-card__eyebrow">KiraayaBook</p>
+            <p class="price-card__amt"><span class="rupee">Rs</span>499<span class="per">/mo</span></p>
+            <p class="price-card__line">Billed monthly. Cancel anytime.</p>
+            <a href="#" class="btn btn--lg btn--block" onclick="return false">Start your first cycle free</a>
+            <p class="price-card__roi">One recovered Rs 15,000 rent = <strong>30 months</strong> of KiraayaBook.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHO + FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--rule">07 · Who it's for &amp; questions</p>
+        <div class="who-grid">
+          <div class="who">
+            <h2 class="section__title section__title--sm">Built for the small landlord, not the property empire.</h2>
+            <p class="prose">
+              KiraayaBook is for the owner of <strong>a handful of units</strong> — four flats,
+              a single building, a 15-bed PG. Big enough that chasing rent eats your
+              evenings; small enough that a property-management suite is overkill and
+              overpriced. If you're currently running it on WhatsApp and a diary, this is for you.
+            </p>
+            <div class="who-tags">
+              <span>Individual landlords</span>
+              <span>PG &amp; hostel owners</span>
+              <span>Family-owned buildings</span>
+              <span>2–30 units</span>
+            </div>
+          </div>
+
+          <div class="faq">
+            <details open>
+              <summary>Does it actually send messages, or just remind me to?</summary>
+              <p>KiraayaBook drafts each reminder — personalised, with the tenant's name, month and balance — and stages it in your outbox on schedule. You send from your own number with a tap, so it always looks like it came from you, not a robot.</p>
+            </details>
+            <details>
+              <summary>My tenants pay by cash and UPI. Does that work?</summary>
+              <p>Yes. Mark a cash payment as received and the due clears and a receipt goes out, same as UPI. KiraayaBook tracks the balance — it doesn't force a single payment rail on your tenants.</p>
+            </details>
+            <details>
+              <summary>I'm not very techy. How long to set up?</summary>
+              <p>An evening. You add each unit, tenant, rent and due day once. After that the monthly cycle runs on its own — the whole point is that you stop doing the setup work every month.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <span class="brand">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" role="img" aria-label="KiraayaBook logo">
+              <rect x="3" y="4" width="26" height="24" rx="3" fill="#0F766E"/>
+              <rect x="3" y="4" width="7" height="24" rx="3" fill="#0a5952"/>
+              <path d="M14 10h11M14 16h11M14 22h7" stroke="#F6F4EF" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand__name">Kiraaya<span class="brand__book">Book</span></span>
+        </span>
+        <p class="footer__tag">Rent that collects itself.</p>
+      </div>
+      <div class="footer__meta">
+        <p class="footer__studio">A <strong>KARYA</strong> studio build</p>
+        <a class="footer__mail" href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a>
+        <p class="footer__fine">© 2026 KiraayaBook · Made in India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
