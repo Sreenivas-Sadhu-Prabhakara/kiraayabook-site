@@ -1,12 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KiraayaBook — Rent that collects itself</title>
-  <meta name="description" content="Turn your monthly rent chase into an automatic dues, reminder and receipt cycle. Built for Indian landlords and PG owners. Subscription pricing shared on a discovery call." />
+
+  <title>KiraayaBook — auto rent collection for Indian landlords</title>
+  <meta name="description" content="Automate rent reminders, rent receipts and a live tenant ledger for your flats and PG beds. Built for Indian landlords and PG owners — book a discovery call." />
+  <meta name="keywords" content="rent collection app, rent reminder, rent receipt, PG rent management, tenant ledger, landlord software India" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+  <link rel="canonical" href="https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/" />
+  <meta name="theme-color" content="#0F766E" />
+  <meta name="author" content="KARYA" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KARYA" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:title" content="KiraayaBook — auto rent collection for Indian landlords" />
+  <meta property="og:description" content="Automate rent reminders, rent receipts and a live tenant ledger for your flats and PG beds. Built for Indian landlords and PG owners — book a discovery call." />
+  <meta property="og:url" content="https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/" />
+  <meta property="og:image" content="https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="KiraayaBook — rent collection, reminders and receipts on autopilot for Indian landlords and PG owners." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KiraayaBook — auto rent collection for Indian landlords" />
+  <meta name="twitter:description" content="Automate rent reminders, rent receipts and a live tenant ledger for your flats and PG beds. Built for Indian landlords and PG owners — book a discovery call." />
+  <meta name="twitter:image" content="https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/og.png" />
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/og.png" />
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kaarya-bench.pages.dev/#org",
+        "name": "KARYA",
+        "url": "https://kaarya-bench.pages.dev/",
+        "email": "sreeni.nintendo@gmail.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/#website",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/",
+        "name": "KiraayaBook",
+        "inLanguage": "en-IN",
+        "publisher": { "@id": "https://kaarya-bench.pages.dev/#org" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "KiraayaBook",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/",
+        "image": "https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/og.png",
+        "description": "Automatic rent collection for Indian landlords and PG owners — a monthly rent cycle with staged WhatsApp reminders, instant digital receipts, an electricity split and a live tenant ledger of collected vs pending.",
+        "inLanguage": ["en-IN", "hi-IN"],
+        "areaServed": { "@type": "Country", "name": "India" },
+        "audience": { "@type": "BusinessAudience" },
+        "provider": { "@type": "Organization", "name": "KARYA" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock",
+          "description": "Subscription — pricing shared on a discovery call"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does it actually send messages, or just remind me to?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "KiraayaBook drafts each reminder — personalised, with the tenant's name, month and balance — and stages it in your outbox on schedule. You send from your own number with a tap, so it always looks like it came from you, not a robot."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "My tenants pay by cash and UPI. Does that work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Mark a cash payment as received and the due clears and a receipt goes out, same as UPI. KiraayaBook tracks the balance — it doesn't force a single payment rail on your tenants."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I'm not very techy. How long to set up?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An evening. You add each unit, tenant, rent and due day once. After that the monthly cycle runs on its own — the whole point is that you stop doing the setup work every month."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does it cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pricing is worked out on a quick discovery call and billed monthly on subscription. We're keeping public prices off the page while we onboard our first users."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "KARYA · On the Bench",
+            "item": "https://kaarya-bench.pages.dev/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "KiraayaBook",
+            "item": "https://sreenivas-sadhu-prabhakara.github.io/kiraayabook-site/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -38,11 +160,11 @@
   <main id="main">
 
     <!-- ============ HERO ============ -->
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero__grid">
         <div class="hero__copy">
           <p class="eyebrow">Rent collection, on autopilot</p>
-          <h1 class="hero__title">Rent that<br /><span class="accent-word">collects itself.</span></h1>
+          <h1 class="hero__title" id="hero-title">Rent that<br /><span class="accent-word">collects itself.</span></h1>
           <p class="hero__pain">
             Every month you re-open WhatsApp, scroll for who paid, retype the same
             reminder, and hunt through a diary for arrears. KiraayaBook runs that
@@ -97,7 +219,7 @@
     </section>
 
     <!-- ============ PROBLEM ============ -->
-    <section class="section" id="problem">
+    <section class="section" id="problem" aria-label="The problem">
       <div class="wrap">
         <p class="eyebrow eyebrow--rule">01 · The problem</p>
         <div class="two-col">
@@ -137,7 +259,7 @@
     </section>
 
     <!-- ============ INSIGHT ============ -->
-    <section class="insight" id="insight">
+    <section class="insight" id="insight" aria-label="The insight">
       <div class="wrap">
         <p class="eyebrow eyebrow--light">02 · The insight</p>
         <blockquote class="insight__quote">
@@ -155,7 +277,7 @@
     </section>
 
     <!-- ============ HOW IT WORKS ============ -->
-    <section class="section" id="how">
+    <section class="section" id="how" aria-label="How it works">
       <div class="wrap">
         <p class="eyebrow eyebrow--rule">03 · How it works</p>
         <h2 class="section__title">Set it up once. Then every month runs itself.</h2>
@@ -194,7 +316,7 @@
     </section>
 
     <!-- ============ FEATURES ============ -->
-    <section class="section section--tint" id="features">
+    <section class="section section--tint" id="features" aria-label="What's inside">
       <div class="wrap">
         <p class="eyebrow eyebrow--rule">04 · What's inside</p>
         <h2 class="section__title">The month's whole rent engine, in one book.</h2>
@@ -229,7 +351,7 @@
     </section>
 
     <!-- ============ PRODUCT PREVIEW ============ -->
-    <section class="section" id="preview">
+    <section class="section" id="preview" aria-label="The dashboard">
       <div class="wrap">
         <p class="eyebrow eyebrow--rule">05 · The dashboard</p>
         <h2 class="section__title">Open it on the 1st. See the whole building in ten seconds.</h2>
@@ -315,7 +437,7 @@
     </section>
 
     <!-- ============ PRICING ============ -->
-    <section class="section section--tint" id="pricing">
+    <section class="section section--tint" id="pricing" aria-label="Pricing">
       <div class="wrap">
         <p class="eyebrow eyebrow--rule">06 · Pricing</p>
         <div class="price-wrap">
@@ -337,7 +459,7 @@
           <div class="price-card">
             <p class="price-card__eyebrow">KiraayaBook</p>
             <p class="price-card__amt" style="font-size:34px;">Pricing on discovery</p>
-            <p class="price-card__line">Subscription basis · billed monthly.</p>
+            <p class="price-card__line">Subscription basis</p>
             <p class="prose" style="color:color-mix(in srgb, var(--paper) 82%, transparent);margin:0 0 22px;">
               We set pricing on a short discovery call and bill it as a simple monthly
               subscription — sized to how many units you run. Early users get founder terms.
@@ -349,7 +471,7 @@
     </section>
 
     <!-- ============ WHO + FAQ ============ -->
-    <section class="section" id="faq">
+    <section class="section" id="faq" aria-label="Who it's for and frequently asked questions">
       <div class="wrap">
         <p class="eyebrow eyebrow--rule">07 · Who it's for &amp; questions</p>
         <div class="who-grid">
@@ -393,7 +515,7 @@
   </main>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="footer">
+  <footer class="footer" aria-label="Site footer">
     <div class="wrap footer__inner">
       <div class="footer__brand">
         <span class="brand">
