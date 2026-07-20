@@ -3,7 +3,7 @@
 A standalone marketing/explainer page for **KiraayaBook**, the rent-collection
 tool for small Indian landlords and PG owners.
 
-> **Rent that collects itself.** — Rs 499/mo
+> **Rent that collects itself.** — pricing on discovery, subscription basis
 
 This is *not* the product UI. It is a polished, self-contained landing page that
 makes the idea instantly clear to a non-technical SMB owner and to an investor
